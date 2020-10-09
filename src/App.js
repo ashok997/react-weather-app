@@ -2,12 +2,34 @@ import React from "react";
 
 function App() {
   const dateParser = (d) => {
-    let day = d.getDay();
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "Devember",
+    ];
+    const days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    let day = days[d.getDay()];
     let date = d.getDate();
-    let month = d.getMonth();
+    let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day}${date}${month}${year}`;
+    return `${day} ${date} ${month} ${year}`;
   };
 
   return (
