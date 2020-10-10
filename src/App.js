@@ -42,6 +42,10 @@ function App() {
           <div className="location">San Antonio, US</div>
           <div className="date">{dateParser(new Date())}</div>
         </div>
+        <div className="weather-box">
+          <div className="temp">15°</div>
+          <div className="weather">Sunny</div>
+        </div>
       </main>
     </div>
   );
