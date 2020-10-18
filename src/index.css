@@ -36,3 +36,14 @@ body {
   text-align: center;
   font-style: italic;
 }
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  border-radius: 16px;
+}
