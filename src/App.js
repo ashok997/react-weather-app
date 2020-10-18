@@ -50,6 +50,17 @@ function App() {
           <div className="temp">15°</div>
           <div className="weather">Sunny</div>
         </div>
+        /*
+        <span>
+          Photo by{" "}
+          <a href="https://unsplash.com/@francesco_ungaro?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+            Francesco Ungaro
+          </a>{" "}
+          on{" "}
+          <a href="https://unsplash.com/s/photos/mountain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+            Unsplash
+          </a>
+        </span>
       </main>
     </div>
   );
