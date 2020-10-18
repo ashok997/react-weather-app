@@ -8,6 +8,16 @@ body {
   font-family: "montseratt", sans-serif;
 }
 
+.app {
+  background-color: plum;
+  background-size: cover;
+  background-position: bottom;
+}
+
+main {
+  min-height: 100vh;
+}
+
 .search-box {
   width: 100%;
   margin: 0 auto 75px;
