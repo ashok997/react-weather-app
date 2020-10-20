@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 const API_KEY = `${process.env.REACT_APP_WEATHER_API_KEY}`;
-const API_URL = "https://api/openweahermap.org/data/2.5";
+const API_URL = "https://api.openweathermap.org/data/2.5/";
 
 function App() {
+  const [query, setQuery] = useState("");
+  const [weather, setWeather] = useState({});
+
+  const search = (event) => {
+    if (event.key === "Enter") {
+      fetch(`${API_URL}weather?q=${query}&units=imperial&APPID=${API_KEY}`)
+        .then((res) => res.json())
+        .then((result) => {
+          setWeather(result);
+          setQuery("");
+          console.log(result);
+        });
+    }
+  };
+
   const dateParser = (d) => {
     const months = [
       "January",
@@ -40,7 +55,14 @@ function App() {
     <div className="app">
       <main>
         <div className="search-box">
-          <input type="text" className="search-bar" placeholder="Search...." />
+          <input
+            type="text"
+            className="search-bar"
+            placeholder="Search...."
+            onChange={(e) => setQuery(e.target.value)}
+            value={query}
+            onKeyPress={search}
+          />
         </div>
         <div className="location-box">
           <div className="location">San Antonio, US</div>
