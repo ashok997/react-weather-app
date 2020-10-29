@@ -15,6 +15,20 @@ body {
   transition: 0.4 ease-out;
 }
 
+.Snow {
+  background-image: url("./assets/snow-background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.Clouds {
+  background-image: url("./assets/cloud-background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
 main {
   min-height: 100vh;
   background-image: linear-gradient(
@@ -95,3 +109,8 @@ main {
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
+
+/* snow background photo by asoggetti https://unsplash.com/photos/x8GFIajIq6M 
+   cold background photo by Francesco Ungaro https://unsplash.com/photos/QgFbolHMPI4 
+   cloud background photo by Nick Ilasoz https://unsplash.com/photos/-YgVkOk-tV4
+*/
