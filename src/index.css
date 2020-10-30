@@ -10,21 +10,28 @@ body {
 
 .app {
   background-image: url("./assets/cold-background.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   transition: 0.4 ease-out;
 }
 
 .Snow {
   background-image: url("./assets/snow-background.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: bottom;
   transition: 0.4 ease-out;
 }
 
 .Clouds {
   background-image: url("./assets/cloud-background.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.Clear {
+  background-image: url("./assets/clear-background.jpg");
+  background-size: contain;
   background-position: bottom;
   transition: 0.4 ease-out;
 }
@@ -40,8 +47,9 @@ main {
 }
 
 .search-box {
-  width: 100%;
-  margin: 0 0 75px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search-box .search-bar {
@@ -113,4 +121,5 @@ main {
 /* snow background photo by asoggetti https://unsplash.com/photos/x8GFIajIq6M 
    cold background photo by Francesco Ungaro https://unsplash.com/photos/QgFbolHMPI4 
    cloud background photo by Nick Ilasoz https://unsplash.com/photos/-YgVkOk-tV4
+   clear background photo by Clay Banks https://unsplash.com/photos/Jv1DMZhITGk
 */
